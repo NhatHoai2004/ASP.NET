@@ -1,12 +1,219 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ASP.NET\\DuongNhatHoai\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|d:\\asp.net\\duongnhathoai\\duongnhathoai\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC318140-6057-416A-882F-71AC69FC216A}|DuongNhatHoai\\DuongNhatHoai.csproj|solutionrelative:duongnhathoai\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\Payment.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Payment.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\Payment.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:35:10.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA8wAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:34:34.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\Order.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Order.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:33:48.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\Category.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Category.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:32:18.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\Cart.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Cart.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\Cart.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA2wAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:31:26.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T14:28:05.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAMMUAAAAAAAAAAAiwMkUAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-01T13:01:51.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\appsettings.json",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\appsettings.json",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\appsettings.json",
+              "RelativeToolTip": "DuongNhatHoai\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-28T04:04:31.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Program.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Program.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Program.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T02:23:38.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAqwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T02:21:29.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\User.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\User.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T02:17:46.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DuongNhatHoai\\Models\\Product.cs",
+              "ToolTip": "D:\\ASP.NET\\DuongNhatHoai\\DuongNhatHoai\\Models\\Product.cs",
+              "RelativeToolTip": "DuongNhatHoai\\Models\\Product.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA/wA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T02:17:34.253Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
