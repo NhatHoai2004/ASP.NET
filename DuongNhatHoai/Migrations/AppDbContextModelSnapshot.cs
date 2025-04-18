@@ -22,6 +22,121 @@ namespace DuongNhatHoai.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DuongNhatHoai.Models.Banner", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Banners");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.Blog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Blogs");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogoUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
             modelBuilder.Entity("DuongNhatHoai.Models.Cart", b =>
                 {
                     b.Property<int>("Id")
@@ -33,22 +148,61 @@ namespace DuongNhatHoai.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("DuongNhatHoai.Models.Category", b =>
@@ -62,12 +216,24 @@ namespace DuongNhatHoai.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -75,7 +241,7 @@ namespace DuongNhatHoai.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("DuongNhatHoai.Models.Order", b =>
+            modelBuilder.Entity("DuongNhatHoai.Models.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -86,25 +252,40 @@ namespace DuongNhatHoai.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("TotalPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Orders");
+                    b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("DuongNhatHoai.Models.OrderDetail", b =>
+            modelBuilder.Entity("DuongNhatHoai.Models.OrderTable", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -112,26 +293,44 @@ namespace DuongNhatHoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("OrderId")
+                    b.Property<int?>("CartId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("Quantity")
+                    b.Property<string>("UpdatedBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("CartId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("DuongNhatHoai.Models.Payment", b =>
@@ -142,36 +341,33 @@ namespace DuongNhatHoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<decimal>("Amount")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("OrderId")
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OrderId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime?>("PaymentDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PaymentMethod")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
+                    b.Property<string>("PaymentStatus")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TransactionId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Payments");
                 });
@@ -184,18 +380,22 @@ namespace DuongNhatHoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("BrandId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Image")
-                        .IsRequired()
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -203,13 +403,27 @@ namespace DuongNhatHoai.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("SalePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -225,30 +439,41 @@ namespace DuongNhatHoai.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Role")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -256,81 +481,143 @@ namespace DuongNhatHoai.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("OrderDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
+                });
+
             modelBuilder.Entity("DuongNhatHoai.Models.Cart", b =>
                 {
-                    b.HasOne("DuongNhatHoai.Models.Product", "Product")
-                        .WithMany("Carts")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("DuongNhatHoai.Models.User", "User")
                         .WithMany("Carts")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Product");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("DuongNhatHoai.Models.Order", b =>
+            modelBuilder.Entity("DuongNhatHoai.Models.CartItem", b =>
                 {
+                    b.HasOne("DuongNhatHoai.Models.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DuongNhatHoai.Models.Product", "Product")
+                        .WithMany("CartItems")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.OrderTable", b =>
+                {
+                    b.HasOne("DuongNhatHoai.Models.Cart", "Cart")
+                        .WithMany("Orders")
+                        .HasForeignKey("CartId");
+
                     b.HasOne("DuongNhatHoai.Models.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("DuongNhatHoai.Models.OrderDetail", b =>
-                {
-                    b.HasOne("DuongNhatHoai.Models.Order", "Order")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("DuongNhatHoai.Models.Product", "Product")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Order");
+                    b.Navigation("Cart");
 
-                    b.Navigation("Product");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DuongNhatHoai.Models.Payment", b =>
                 {
-                    b.HasOne("DuongNhatHoai.Models.Order", "Order")
+                    b.HasOne("DuongNhatHoai.Models.OrderTable", "Order")
                         .WithMany("Payments")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("DuongNhatHoai.Models.User", "User")
-                        .WithMany("Payments")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderId");
 
                     b.Navigation("Order");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DuongNhatHoai.Models.Product", b =>
                 {
+                    b.HasOne("DuongNhatHoai.Models.Brand", "Brand")
+                        .WithMany("Products")
+                        .HasForeignKey("BrandId");
+
                     b.HasOne("DuongNhatHoai.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId");
 
+                    b.Navigation("Brand");
+
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("OrderDetail", b =>
+                {
+                    b.HasOne("DuongNhatHoai.Models.OrderTable", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId");
+
+                    b.HasOne("DuongNhatHoai.Models.Product", "Product")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.Brand", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("DuongNhatHoai.Models.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("DuongNhatHoai.Models.Category", b =>
@@ -338,7 +625,7 @@ namespace DuongNhatHoai.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("DuongNhatHoai.Models.Order", b =>
+            modelBuilder.Entity("DuongNhatHoai.Models.OrderTable", b =>
                 {
                     b.Navigation("OrderDetails");
 
@@ -347,7 +634,7 @@ namespace DuongNhatHoai.Migrations
 
             modelBuilder.Entity("DuongNhatHoai.Models.Product", b =>
                 {
-                    b.Navigation("Carts");
+                    b.Navigation("CartItems");
 
                     b.Navigation("OrderDetails");
                 });
@@ -357,8 +644,6 @@ namespace DuongNhatHoai.Migrations
                     b.Navigation("Carts");
 
                     b.Navigation("Orders");
-
-                    b.Navigation("Payments");
                 });
 #pragma warning restore 612, 618
         }
