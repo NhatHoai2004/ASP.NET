@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace DuongNhatHoai.Models
 {
@@ -13,12 +14,14 @@ namespace DuongNhatHoai.Models
         public int CartId { get; set; }
 
         [ForeignKey("CartId")]
+        [JsonIgnore]
         public virtual Cart Cart { get; set; } = null!;
 
         [Required]
         public int ProductId { get; set; }
 
         [ForeignKey("ProductId")]
+        [JsonIgnore]
         public virtual Product Product { get; set; } = null!;
 
         [Required]

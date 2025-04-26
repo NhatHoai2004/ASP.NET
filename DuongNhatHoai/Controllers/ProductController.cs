@@ -19,6 +19,7 @@ namespace DuongNhatHoai.Controllers
         }
 
         // GET: api/Product
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {

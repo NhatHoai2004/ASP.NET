@@ -171,5 +171,5 @@ D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\obj\Debug\net8.0\DuongNhatHoai.pdb
 D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\obj\Debug\net8.0\DuongNhatHoai.genruntimeconfig.cache
 D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\obj\Debug\net8.0\ref\DuongNhatHoai.dll
 D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\bin\Debug\net8.0\BCrypt.Net-Next.dll
-D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ASP.NET\DuongNhatHoai\DuongNhatHoai\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

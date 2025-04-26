@@ -34,7 +34,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             {
                 var authHeader = context.Request.Headers["Authorization"].FirstOrDefault();
 
-                // Nếu header KHÔNG bắt đầu bằng "Bearer ", thì gán token thủ công
                 if (!string.IsNullOrEmpty(authHeader) && !authHeader.StartsWith("Bearer "))
                 {
                     context.Token = authHeader;
@@ -78,22 +77,41 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// 4. Thêm controller
+// 4. Thêm CORS cho phép React (localhost:3000)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy => policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
+
+
+// 5. Thêm controller
 builder.Services.AddControllers();
 
-// 5. Build app
+// 6. Build app
 var app = builder.Build();
 
-// 6. Swagger UI
+// 7. Swagger UI
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// 7. Middlewares
+// 8. Middlewares
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
+
+// ✅ Kích hoạt CORS trước khi auth
+app.UseCors("AllowReactApp");
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();

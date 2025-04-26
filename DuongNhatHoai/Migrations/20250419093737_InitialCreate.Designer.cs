@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DuongNhatHoai.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250411034023_InitialCreate")]
+    [Migration("20250419093737_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -456,6 +456,9 @@ namespace DuongNhatHoai.Migrations
 
                     b.Property<string>("FullName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")

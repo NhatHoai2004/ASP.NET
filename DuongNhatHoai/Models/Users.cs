@@ -16,7 +16,10 @@ namespace DuongNhatHoai.Models
         [EmailAddress]
         public string Email { get; set; } = null!;
 
-        [Required]
+        public string? Image { get; set; }
+
+
+        
         public string PasswordHash { get; set; } = null!;
 
         public string? Phone { get; set; }
@@ -32,6 +35,7 @@ namespace DuongNhatHoai.Models
         public string? CreatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string? UpdatedBy { get; set; }
+
 
         public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
         public virtual ICollection<OrderTable> Orders { get; set; } = new List<OrderTable>();
